@@ -9,4 +9,4 @@ const mixed = (type) =>
     return type[num]
 };
 
-console.log('Use the melody pitch ' + mixed(note) + ' with the chord ... ' + mixed(note) + mixed(chord));
+console.log('Use the melody pitch ' + mixed(note) + ' with the chord ' + mixed(note) + mixed(chord));
