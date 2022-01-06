@@ -14,7 +14,7 @@
 **4. Ta-da, you have the project set on your machine locally**
 
 **5. Now to run it, first install Node on your machine. If you already have it, you do not have to re-install it**
->**Follow this link to get Node running on your machine:** ```https://nodejs.org/en/download/```
+>**Follow this link to get Node running on your machine:** ```[https://nodejs.org/en/download/]```
 
 **6. Now inside the *Mixed-Messages* directory of the project, run the command: ```node script.js```**
 
