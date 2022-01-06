@@ -1,4 +1,5 @@
 # Mixed-Messages
+
 ## This is a project from Codecademy's Full Stack Developer Career Path
 
 ### To run this project, you have to clone it locally on your machine
