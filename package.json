@@ -1,0 +1,19 @@
+{
+  "name": "mixed-messages",
+  "version": "1.0.0",
+  "description": "\"Random chord generator\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebAckom/Mixed-Messages.git"
+  },
+  "author": "CalebAckom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebAckom/Mixed-Messages/issues"
+  },
+  "homepage": "https://github.com/CalebAckom/Mixed-Messages#readme"
+}
