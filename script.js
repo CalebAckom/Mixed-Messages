@@ -1,12 +1,19 @@
-const { type } = require("os");
+const note = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
+const chord = ['maj9', 'maj9#11', 'm11', 'm13', '13', '13b9', '9#11', '7#9b13', '7sus4b9', 'dim7', 'm7b5'];
 
-const note = ['C', 'C#/Db', 'D', 'Eb', 'E', 'F', 'F#/Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
-const chord = ['maj9', 'naj9#11', 'm11', 'm13', '13', '13b9', '9#11', '7#9b13', '7sus4b9', 'dim7', 'm7b5'];
-
-const mixed = (type) =>
-{
-    let num = Math.floor(Math.random() * type.length);
-    return type[num]
+const randomSelect= (array) => {
+    let randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
 };
 
-console.log('Use the generated melody note or pitch ' + mixed(note) + ' with the chord ' + mixed(note) + mixed(chord));
+const chordProgression = () => {
+    let progressArray = [];
+    for (let i = 0; i < 4; i++) {
+        progressArray.push(randomSelect(note) + randomSelect(chord));
+    }
+    return progressArray.join(' -> ');
+}
+let melodyNote1 = randomSelect(note);
+let chordProg1 = chordProgression();
+
+console.log(`Compose melody on note: ${melodyNote1} \nWith a chord progression: ${chordProg1}`);
