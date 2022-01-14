@@ -6,6 +6,14 @@ const randomSelect= (array) => {
     return array[randomIndex];
 };
 
+const chordProgression = () => {
+    let progressArray = [];
+    for (let i = 0; i < 4; i++) {
+        progressArray.push(randomSelect(note) + randomSelect(chord));
+    }
+    return progressArray.join(' -> ');
+}
 let melodyNote1 = randomSelect(note);
+let chordProg1 = chordProgression();
 
-console.log(`Start melody on note: ${melodyNote1}`);
+console.log(`Compose melody on note: ${melodyNote1} \nWith a chord progression: ${chordProg1}`);
