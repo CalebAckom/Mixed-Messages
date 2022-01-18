@@ -26,3 +26,4 @@ console.log('Melody and Chord Composition');
 console.log('============================');
 console.log(`Using tempo :${tempo1} BPM`);
 console.log(`Starting melody on note: ${melodyNote1} \nWith chord progression: ${chordProg1}`);
+console.log(`Compose melody on note: ${melodyNote1} \nWith a chord progression: ${chordProg1}`);
