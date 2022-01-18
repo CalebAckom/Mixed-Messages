@@ -6,14 +6,24 @@ const randomSelect= (array) => {
     return array[randomIndex];
 };
 
-const chordProgression = () => {
+const genChordProgression = () => {
     let progressArray = [];
     for (let i = 0; i < 4; i++) {
         progressArray.push(randomSelect(note) + randomSelect(chord));
     }
     return progressArray.join(' -> ');
 }
+// Generates tempo between 60 - 180BPM 
+const generateTempo = () => {
+    let tempo = Math.abs(Math.floor(Math.random() * (180 - 60 + 1) + 60));
+    return tempo;
+}
 let melodyNote1 = randomSelect(note);
-let chordProg1 = chordProgression();
+let chordProg1 = genChordProgression();
+let tempo1 = generateTempo();
 
+console.log('Melody and Chord Composition');
+console.log('============================');
+console.log(`Using tempo :${tempo1} BPM`);
+console.log(`Starting melody on note: ${melodyNote1} \nWith chord progression: ${chordProg1}`);
 console.log(`Compose melody on note: ${melodyNote1} \nWith a chord progression: ${chordProg1}`);
